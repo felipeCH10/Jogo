@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spin & Collect - O Desafio do Explorador</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="te">
+
+    <header>
+        <nav id="navegacao">
+            <div class="logo">SPIN<span>&</span>COLLECT</div>
+            
+            <button id="botaoTemaDesktop" class="botao-alternar-tema desktop-only" onclick="alternarTema()">
+                <i class="fa-regular fa-sun"></i>
+            </button>
+            
+            <ul class="menu-navegacao" id="menuNavegacao">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#recursos">Recursos</a></li>
+                <li><a href="#persona">Público</a></li>
+                <li><a href="#gameplay">Gameplay</a></li>
+                <li><a href="#download">Download</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner-principal" id="inicio">
+        <div class="conteudo-banner">
+            <div class="texto-banner">
+                <h1>SPIN & COLLECT</h1>
+                <p>Entre em um mundo de velocidade, segredos e coletáveis! Cada fase é um labirinto de possibilidades onde apenas os exploradores mais dedicados alcançarão 100% de completude. <strong style="text-transform: uppercase;">Você consegue pegar todas as moedas?</strong></p>
+                
+                <div class="ng">
+                    <input type="text" id="nomeJogador" placeholder="Digite seu nome">
+                    <button onclick="saudarJogador()">Entrar no Jogo</button>
+                    <p id="mensagemSaudacao"></p>
+                </div>
+
+                <div class="botoes-acao">
+                    <a href="jogo8/index.html" target="_blank" class="botao botao-principal">JOGAR</a>
+                    <a href="https://youtu.be/-SCKf7WeIcc" class="botao botao-secundario" target="_blank">VER GAMEPLAY</a>
+                </div>
+            </div>
+            <div class="imagem-banner">
+                <div class="preview-jogo" id="previewJogo">
+                    <div class="tela-jogo-container">
+                        <div class="tela-jogo">
+                            <iframe src="jogo8/index.html" width="100%" height="100%" style="border: none;"></iframe>
+                                <i class="fa-solid fa-otter"></i><br>
+                                <span>PRESS START</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="conteudoPrincipal" class="conteudo-principal">
+
+        <section class="secao-recursos" id="recursos">
+            <h2 class="titulo-secao">RECURSOS DO JOGO</h2>
+            <div class="grade-recursos">
+                <div class="cartao-recurso">
+                    <div class="icone-recurso">
+                        <i class="fa-solid fa-crosshairs"></i>
+                    </div>
+                    <h3>Exploração Total</h3>
+                    <p>Cada fase é projetada com múltiplos caminhos, áreas secretas e atalhos.</p>
+                </div>
+                <div class="cartao-recurso">
+                    <div class="icone-recurso amarelo">
+                        <i class="fa-solid fa-coins"></i>
+                    </div>
+                    <h3>Sistema de Coleta</h3>
+                    <p>Moedas estrategicamente posicionadas em locais desafiadores.</p>
+                </div>
+                <div class="cartao-recurso">
+                    <div class="icone-recurso amarelo">
+                        <i class="fa-solid fa-person-running"></i>
+                    </div>
+                    <h3>Movimento Fluido</h3>
+                    <p>Controles precisos e responsivos com física realista.</p>
+                </div>
+                <div class="cartao-recurso">
+                    <div class="icone-recurso">
+                        <i class="fa-solid fa-user-secret"></i>
+                    </div>
+                    <h3>Caminhos Secretos</h3>
+                    <p>Descubra atalhos ocultos e áreas secretas em cada fase.</p>
+                </div>
+                <div class="cartao-recurso">
+                    <div class="icone-recurso">
+                        <i class="fa-solid fa-gamepad"></i>
+                    </div>
+                    <h3>Estilo Retrô</h3>
+                    <p>Gráficos em pixel art com estética dos clássicos de 16-bit.</p>
+                </div>
+                <div class="cartao-recurso">
+                    <div class="icone-recurso">
+                        <i class="fa-solid fa-desktop"></i>
+                    </div>
+                    <h3>Tela Desktop Otimizada</h3>
+                    <p>Resolução perfeita para monitores widescreen. Experiência imersiva!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao-persona" id="persona">
+            <h2 class="titulo-secao">PERSONA DO JOGADOR</h2>
+            <div class="conteudo-persona">
+                <div class="imagem-persona">
+                    <div class="moldura-persona">
+                        <img src="Persona.png" alt="Pedro Speed Martins">
+                    </div>
+                    <div class="emblema-persona">100% COMPLETO</div>
+                </div>
+                <div class="info-persona">
+                    <h2>Pedro "Speed" Martins</h2>
+                    <p class="subtitulo-persona">19 anos • São Paulo • Estudante de Tecnologia</p>
+                    <p class="descricao-persona">Pedro representa o jogador <strong>Explorador/Completista</strong>. Ele não joga apenas para terminar - ele joga para dominar.</p>
+                    <div class="citacao-persona">"Se tem uma moeda escondida nessa fase eu vou achar."</div>
+                    <div class="estatisticas-persona">
+                        <div class="estatistica">
+                            <div class="rotulo-estatistica">Tipo de Jogador</div>
+                            <div class="valor-estatistica">Explorador</div>
+                        </div>
+                        <div class="estatistica">
+                            <div class="rotulo-estatistica">Foco Principal</div>
+                            <div class="valor-estatistica">100% Complete</div>
+                        </div>
+                        <div class="estatistica">
+                            <div class="rotulo-estatistica">Gênero Favorito</div>
+                            <div class="valor-estatistica">Plataforma 2D</div>
+                        </div>
+                        <div class="estatistica">
+                            <div class="rotulo-estatistica">Frustração Máxima</div>
+                            <div class="valor-estatistica">Controles Ruins</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao-gameplay" id="gameplay">
+            <h2 class="titulo-secao">COMO JOGAR</h2>
+            <div class="grade-gameplay">
+                <div class="cartao-gameplay" style="background-image: url('jogo1.png');">
+                    <div class="overlay-gameplay"></div>
+                    <div class="conteudo-gameplay">
+                        <div class="visual-gameplay">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="info-gameplay">
+                            <h3>1. EXPLORE</h3>
+                            <p>Varra a fase inteira. Nenhum canto pode ser ignorado.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cartao-gameplay" style="background-image: url('jogo2.png');">
+                    <div class="overlay-gameplay"></div>
+                    <div class="conteudo-gameplay">
+                        <div class="visual-gameplay">
+                            <i class="fa-solid fa-gem"></i>
+                        </div>
+                        <div class="info-gameplay">
+                            <h3>2. COLETE</h3>
+                            <p>Pegue todas as moedas. Cada uma conta para seu score.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cartao-gameplay" style="background-image: url('jogo3.png');">
+                    <div class="overlay-gameplay"></div>
+                    <div class="conteudo-gameplay">
+                        <div class="visual-gameplay">
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+                        <div class="info-gameplay">
+                            <h3>3. DESCUBRA</h3>
+                            <p>Encontre caminhos secretos e áreas ocultas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cartao-gameplay" style="background-image: url('jogo4.png');">
+                    <div class="overlay-gameplay"></div>
+                    <div class="conteudo-gameplay">
+                        <div class="visual-gameplay">
+                            <i class="fa-solid fa-rotate"></i>
+                        </div>
+                        <div class="info-gameplay">
+                            <h3>4. REPITA</h3>
+                            <p>Rejogue para melhorar. Bata seus recordes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao-download" id="download">
+            <div class="conteudo-download">
+                <h2>PRONTO PARA JOGAR?</h2>
+                <p>Disponível para múltiplas plataformas. Comece sua jornada agora!</p>
+                <div class="plataformas">
+                    <button class="botao-plataforma" onclick="mostrarMensagem('PC')">
+                        <i class="fa-solid fa-desktop"></i>
+                        <div>PC / Windows</div>
+                    </button>
+                    <button class="botao-plataforma" onclick="mostrarMensagem('Web')">
+                        <i class="fa-solid fa-globe"></i>
+                        <div>Navegador</div>
+                    </button>
+                    <button class="botao-plataforma" onclick="mostrarMensagem('Mobile')">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                        <div>Mobile</div>
+                    </button>
+                </div>
+                <p id="mensagemDownload"></p>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <div class="rodape">
+            <div class="links-sociais">
+                <a href="#" class="icone-social">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="#" class="icone-social">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="#" class="icone-social">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="#" class="icone-social">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            <p class="marca-rodape">SPIN & COLLECT</p>
+            <p>© <span id="anoAtual">2026</span> - Desenvolvido para exploradores | Idade mínima: <span id="idadeMinima">13 anos</span> | Máximo: <span id="maxMoedas">100 moedas</span> | Tema: <span id="temaAtual">Escuro</span></p>
+            <p id="mensagemLancamento"></p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
